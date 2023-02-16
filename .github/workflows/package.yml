@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - run: npm ci
-      - run: npm test
+      - run: pnmm i
+      - run: pnpm test
 
   publish-gpr:
     needs: build
